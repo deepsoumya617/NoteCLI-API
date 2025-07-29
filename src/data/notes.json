@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "f7f18d6b-001c-441e-a205-1356b37f2903",
+    "title": "Test note",
+    "content": "This is a test content.",
+    "createdAt": "2025-07-29T07:03:37.733Z",
+    "updatedAt": "2025-07-29T07:03:37.735Z"
+  },
+  {
+    "id": "6e736991-710d-4931-be35-565cdf8e7340",
+    "title": "Updated Note Title",
+    "content": "Updated note content.",
+    "createdAt": "2025-07-29T07:04:47.913Z",
+    "updatedAt": "2025-07-29T07:06:37.084Z"
+  }
+]

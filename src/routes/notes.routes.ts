@@ -7,13 +7,13 @@ import {
   updateNewNote,
 } from '../controllers/notes.controller'
 
-const router: Router = Router()
+const noteRoutes: Router = Router()
 
 // All the routes for notes
-router.get('/', getNotes)
-router.get('/:id', getSingleNote)
-router.post('/', createNewNote)
-router.put('/:id', updateNewNote)
-router.delete('/:id', deleteNote)
+noteRoutes.get('/', getNotes)
+noteRoutes.get('/:id', getSingleNote)
+noteRoutes.post('/', createNewNote)
+noteRoutes.put('/:id', updateNewNote)
+noteRoutes.delete('/:id', deleteNote)
 
-export default router
+export default noteRoutes

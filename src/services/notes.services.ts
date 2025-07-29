@@ -2,8 +2,11 @@ import { Note } from '../types/note'
 import fs from 'fs/promises'
 import path from 'path'
 import { v4 as uuidv4 } from 'uuid'
+import { fileURLToPath } from 'url'
 
 // get the path to the notes file
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 const NOTES_PATH = path.join(__dirname, '../data/notes.json')
 
 // read notes

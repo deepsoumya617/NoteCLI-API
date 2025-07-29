@@ -1,2 +1,26 @@
-### GET '/'
-GET http://localhost:8383
+### Create a new note
+POST http://localhost:8080/api/notes
+Content-Type: application/json
+
+{
+  "title": "From REST Client",
+  "content": "All good now"
+}
+
+### Get all notes
+GET http://localhost:8080/api/notes
+
+### Get a note by ID
+# GET http://localhost:8080/api/notes/{{put_note_id_here}}
+
+### Update a note
+PUT http://localhost:8080/api/notes/6e736991-710d-4931-be35-565cdf8e7340
+Content-Type: application/json
+
+{
+    "title": "Updated Note Title",
+    "content": "Updated note content."
+}
+
+### Delete a note
+# DELETE http://localhost:8080/api/notes/{{put_note_id_here}}
