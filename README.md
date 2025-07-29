@@ -43,7 +43,7 @@ src/
 
 ## 📄 API Endpoints
 
-Base URL: `http://localhost:3000/api`
+Base URL: `http://localhost:PORT/api`
 
 | Method | Endpoint     | Description       |
 | ------ | ------------ | ----------------- |
@@ -79,7 +79,7 @@ pnpm start
 ## 📬 Sample Request (CURL)
 
 ```bash
-curl -X POST http://localhost:3000/api/notes \
+curl -X POST http://localhost:PORT/api/notes \
   -H "Content-Type: application/json" \
   -d '{"title": "My Note", "content": "This is a test note."}'
 ```
