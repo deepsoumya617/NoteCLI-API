@@ -95,13 +95,6 @@ curl -X POST http://localhost:3000/api/notes \
 
 ---
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).  
-Feel free to use, modify, and distribute for personal or commercial use.
-
----
-
 ## 🤝 Contributing
 
 Pull requests are welcome!  
