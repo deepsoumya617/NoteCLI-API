@@ -18,7 +18,7 @@ async function writeNotes(notes: Note[]): Promise<void> {
 }
 
 // get all notes
-async function getAllNotes(): Promise<Note[]> {
+export async function getAllNotes(): Promise<Note[]> {
   try {
     return await readNotes()
   } catch (error) {
@@ -28,13 +28,13 @@ async function getAllNotes(): Promise<Note[]> {
 }
 
 // get note by ID
-async function getNoteById(id: string): Promise<Note | null> {
+export async function getNoteById(id: string): Promise<Note | null> {
   const notes = await readNotes()
   return notes.find((note) => note.id === id) || null
 }
 
 // create a new note
-async function createNote(data: {
+export async function createNote(data: {
   title: string
   content: string
 }): Promise<Note> {
@@ -52,7 +52,7 @@ async function createNote(data: {
 }
 
 // update a note
-async function updateNote(
+export async function updateNote(
   id: string,
   data: {
     title?: string
@@ -75,7 +75,7 @@ async function updateNote(
 }
 
 // delete a note
-async function deleteNote(id: string): Promise<boolean> {
+export async function deleteNoteById(id: string): Promise<boolean> {
   const notes = await readNotes()
   const noteIndex = notes.findIndex((note) => note.id === id)
   if (noteIndex === -1) return false
